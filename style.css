@@ -1,0 +1,283 @@
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+
+  /*En las siguientes dos lineas se indica la animación a usar y como operara*/  
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smit{
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+
+  /*En las siguientes dos lineas se indica la animación a usar y como operara*/  
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  
+}
+
+/* a continuación se encuentra la configuración de la animación scale-up-center utilizada en los botones*/
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*----------------------------------------------------------------*/
+
+.btnInicio{
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+}
+
+.smit2{
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+
+  /*En las siguientes dos lineas se indica la animación sacale-up-center y como operara*/  
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+.inputs{
+  /*position: absolute;*/
+  border-radius: 2em;
+  border:5px outset rgba(13, 48, 206, 0.692);
+  display: inline;
+  padding: 0.5em;
+  width: 6%;
+  height: 25px;
+  margin-left:inherit;
+  margin-right: inherit;
+  margin-top: inherit;
+  margin-bottom: inherit;
+  font-size: xx-large;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  align-items: center;
+}
+
+.animacionClase{
+  background:linear-gradient(to right, #005C98, #505BDA);
+  overflow: hidden;
+}
+
+.canvas{
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid;
+}
+
+.canvas2{
+  position: fixed;
+  width:600px;
+  height:500px;
+  border: 1px solid;
+  left: 200px;
+}
+
+.letras_Erroneas{
+  position: fixed;
+  /*float: left;*/
+  width: 175px;
+  height: 35px;
+  margin: 1px;
+  background-color: #005C98;
+  font-size:x-large;
+  font-style: italic;
+  text-align-last: center;
+  align-items: center;
+  left: 10px;
+  top: 10px;
+}
+
+.errores{
+  position: fixed;
+  float: left;
+  left: 10px;
+  top: 70px;
+  margin: 1px;
+  height: 60px;
+  width: 35px;
+
+}
+
+.campeon1{
+
+  position: absolute;
+  bottom: -1;
+  left: 7%;
+
+  animation: burbujas 4.5s linear infinite;
+  height: 70px;
+  width: 70px;
+
+}
+
+.campeon1:nth-child(1){
+  left: 12%;
+  animation: burbujas 4s linear infinite;
+  height: 80px;
+  width: 80px;
+  animation-delay: 1.2s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(6){
+  left: 20%;
+  animation: burbujas 7s linear infinite;
+  height: 85px;
+  width: 85px;
+  animation-delay: 1.5s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(2){
+  left: 28%;
+  animation: burbujas 5s linear infinite;
+  height: 90px;
+  width: 90px;
+  animation-delay: 0.7s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(3){
+  left: 40%;
+  animation: burbujas 6s linear infinite;
+  height: 75px;
+  width: 75px;
+  animation-delay: 1.2s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(7){
+  left: 50%;
+  animation: burbujas 6s linear infinite;
+  height: 90px;
+  width: 90px;
+  animation-delay: 3s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(4){
+  left: 60%;
+  animation: burbujas 3s linear infinite;
+  height: 65px;
+  width: 65px;
+  animation-delay: 1.5s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(8){
+  left: 70%;
+  animation: burbujas 5s linear infinite;
+  height: 85px;
+  width: 85px;
+  animation-delay: 4s;
+  position: absolute;
+  bottom: -10;
+}
+
+.campeon1:nth-child(5){
+  left: 80%;
+  animation: burbujas 7s linear infinite;
+  height: 95px;
+  width: 95px;
+  animation-delay: 1.5s;
+  position: absolute;
+  bottom: -10;
+
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.burbuja{
+  height: 300 px;
+  width: 300px;
+}
+
+@keyframes burbujas {
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+
+  50%{
+    opacity: .8;
+  }
+  100%{
+    bottom: 80vh;
+    opacity: 0;
+  }
+}
