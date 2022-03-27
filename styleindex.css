@@ -1,0 +1,75 @@
+.titulo {
+    padding: 100px;
+    width: 30vw;
+    margin: auto; 
+}
+
+.smit{
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.5em;
+    
+    /*En las siguientes dos lineas se indica la animación a usar y como operara*/  
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* a continuación se encuentra la configuración de la animación scale-up-center utilizada en los botones*/
+@-webkit-keyframes scale-up-center {
+    0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+
+    @keyframes scale-up-center {
+    0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+
+.text-input {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5em;
+    width: 30%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.5em;
+
+    /*En las siguientes dos lineas se indica la animación a usar y como operara*/  
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #005C98, #505BDA);
+}
