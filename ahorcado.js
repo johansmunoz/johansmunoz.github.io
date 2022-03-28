@@ -46,7 +46,7 @@ console.log(campeonSeleccionado);
 campeonSeleccionado = campeonSeleccionado.split("");//separa cada letra del nombre del campeon, el objetivo es poder contar las letras e identificarlas
 
 
-//Función de campeonesTotales para agregar un nuevo elemento al html
+//Función de campeonesTotales para adicionar un nuevo elemento al html
 function nuevosElementos(){
     //crear elemento div
     var nuevaDiv=document.createElement("div");
