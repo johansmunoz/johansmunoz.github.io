@@ -57,7 +57,8 @@ function seleccionAleatoria(){
 //se crea variable donde aparecera el nombre del campeon separando cada letra
 var campeonSeleccionado = seleccionAleatoria();
 console.log(campeonSeleccionado);
-campeonSeleccionado = campeonSeleccionado.split("");//separa cada letra del nombre del campeon, el objetivo es poder contar las letras e identificarlas
+//separa cada letra del nombre del campeon, el objetivo es poder contar las letras e identificarlas
+campeonSeleccionado = campeonSeleccionado.split("");
 
 
 //Función de campeonesTotales para adicionar un nuevo elemento al html
