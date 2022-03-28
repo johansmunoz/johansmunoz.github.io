@@ -1,13 +1,23 @@
 //Se creo la lista de campeones para el juego
-var campeonesLol = window.sessionStorage;
+var campeonesLol; /*= window.sessionStorage;*/
 campeonesLol=["GAREN", "SHYVANA", "MORGANA", "LUX", "GNAR", "ILLAOI", "VARUS", "TRISTANA", "MISS FORTUNE", "TRUNDLE"];
 var palabras = campeonesLol.length;
 console.log(palabras);
 
 
+
 /*Función para agregar palabra al juego*/
 function agregarPalabra(){
     var nuevaPalabra=document.getElementById("input-nueva-palabra").value;//se obtendra del cuadro de texto de la página de inicio la nueva palabra ingresada por el usuairo
+    nuevaPalabra=nuevaPalabra.toUpperCase();
+    //if(nuevaPalabra){
+        alert("PALABRA AGREGADA")
+        campeonesLol.push(nuevaPalabra);
+    //}
+    //else{
+     //   alert("PALABRA VACIA")
+    //}
+    /*var nuevaPalabra=document.getElementById("input-nueva-palabra").value;//se obtendra del cuadro de texto de la página de inicio la nueva palabra ingresada por el usuairo
     nuevaPalabra=nuevaPalabra.toUpperCase();
     //Se creo ciclo para que pueda revisar palabra por palabra si ya existe o no
     for(var i = 0;i<=palabras;i++){
@@ -17,29 +27,32 @@ function agregarPalabra(){
         }
         if(i==palabras){
             campeonesLol.push(nuevaPalabra);//se se ingresa la nueva ppalabra a la lista creada originalmente
-            localStorage.setItem("nombres", JSON.stringify(campeonesLol));//mediante el local storage se conservaran las palabras ingresadas por el usuario, así recargue la página
+            //localStorage.setItem("nombres", JSON.stringify(campeonesLol));//mediante el local storage se conservaran las palabras ingresadas por el usuario, así recargue la página
             //se esta asigando una llave ''nombres'', a toda la lista llamada campeonesLol, el stringify se encarga de convertirla a string.
         }
-    }
+    }*/
+    console.log(nuevaPalabra);
 }
+console.log(campeonesLol);
 
 
-var campeonesTotales= localStorage.getItem("nombres");//El listado con las nuevas palabras se asigna esta nueva variable
+//var campeonesTotales= localStorage.getItem("nombres");//El listado con las nuevas palabras se asigna esta nueva variable
 //Funcion encargada de convertir el JSON en una lista manejable que se pueda operar
-function obtener_localStorage()
+/*function obtener_localStorage()
 {
     campeonesTotales = JSON.parse(localStorage.getItem("nombres"));
     console.log(campeonesTotales);
 }
-obtener_localStorage();
+obtener_localStorage();*/
 
 
 //funcion que se encargara de seleccionar del array, el campeon demanera aleatoria
 function seleccionAleatoria(){
-    if(campeonesTotales!=null){
-    var campeonAleatorio=campeonesTotales[Math.floor(Math.random()*campeonesTotales.length)];
+    //if(campeonesTotales!=null){
+    var campeonAleatorio=campeonesLol[Math.floor(Math.random()*campeonesLol.length)];
     return campeonAleatorio;   
-}}
+}
+//}
 
 //se crea variable donde aparecera el nombre del campeon separando cada letra
 var campeonSeleccionado = seleccionAleatoria();
