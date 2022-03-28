@@ -36,9 +36,10 @@ obtener_localStorage();
 
 //funcion que se encargara de seleccionar del array, el campeon demanera aleatoria
 function seleccionAleatoria(){
+    if(campeonesTotales!=null){
     var campeonAleatorio=campeonesTotales[Math.floor(Math.random()*campeonesTotales.length)];
     return campeonAleatorio;   
-}
+}}
 
 //se crea variable donde aparecera el nombre del campeon separando cada letra
 var campeonSeleccionado = seleccionAleatoria();
