@@ -5,18 +5,13 @@ var palabras = campeonesLol.length;
 console.log(palabras);
 
 
-
 /*Función para agregar palabra al juego*/
 function agregarPalabra(){
     var nuevaPalabra=document.getElementById("input-nueva-palabra").value;//se obtendra del cuadro de texto de la página de inicio la nueva palabra ingresada por el usuairo
     nuevaPalabra=nuevaPalabra.toUpperCase();
-    //if(nuevaPalabra){
         alert("PALABRA AGREGADA")
         campeonesLol.push(nuevaPalabra);
-    //}
-    //else{
-     //   alert("PALABRA VACIA")
-    //}
+
     /*var nuevaPalabra=document.getElementById("input-nueva-palabra").value;//se obtendra del cuadro de texto de la página de inicio la nueva palabra ingresada por el usuairo
     nuevaPalabra=nuevaPalabra.toUpperCase();
     //Se creo ciclo para que pueda revisar palabra por palabra si ya existe o no
